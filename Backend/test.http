@@ -1,0 +1,39 @@
+# POST http://localhost:3000/auth/login HTTP/1.1
+# Content-Type: application/json
+
+# {
+#     "username": "username",
+#     "password" : "password"
+# }
+
+# GET http://localhost:3000/auth/creator HTTP/1.1
+# x-access-token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNTZmNDBmNTc5NmY4NGE3MTMxMzlhZSIsImlhdCI6MTYzMzA4ODU0NSwiZXhwIjoxNjMzMTc0OTQ1fQ.JYQGka8-xdOU2ZjECYwYpR31shsYNu5_qg9cAzy1fiI
+
+# GET http://localhost:3000/auth/currentUser HTTP/1.1
+# x-access-token : eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNTZmNDBmNTc5NmY4NGE3MTMxMzlhZSIsImlhdCI6MTYzMzA4ODU0NSwiZXhwIjoxNjMzMTc0OTQ1fQ.JYQGka8-xdOU2ZjECYwYpR31shsYNu5_qg9cAzy1fiI
+
+
+
+PUT http://localhost:3000/auth/updateProfile HTTP/1.1
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNTZmNDBmNTc5NmY4NGE3MTMxMzlhZSIsImlhdCI6MTYzMzA4ODU0NSwiZXhwIjoxNjMzMTc0OTQ1fQ.JYQGka8-xdOU2ZjECYwYpR31shsYNu5_qg9cAzy1fiI
+Content-Type: application/json
+
+{
+    "username" : "newusername4"
+}
+
+# POST http://localhost:3000/auth/signup HTTP/1.1
+# Content-Type: application/json
+
+# {
+#     "username": "username",
+#     "email" : "username@gmail.com",
+#     "password" : "password",
+#     "firstname": "firstname",
+#     "lastname":"lastname"
+# }
+
+# GET http://localhost:3000/auth/admin HTTP/1.1
+# x-access-token : eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNGMyZmI3Mzk1ZWQ2YWMzMmI2MzM4ZCIsImlhdCI6MTYzMjM4Mjk1MSwiZXhwIjoxNjMyNDY5MzUxfQ.Bz3DfEr4tvTCWJLN7dYRG1DpRhbzxn0k8MP1B_hPskQ 
+
+
