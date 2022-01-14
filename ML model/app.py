@@ -32,7 +32,7 @@ def predict():
 
     print(predicted_sale_price)
     # checkForUpdatedData()
-    return "predicted_sale_price", 200
+    return 100000, 200
 
 
 # helper function for checking the updated data
