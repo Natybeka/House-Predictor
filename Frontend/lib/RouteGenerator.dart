@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:skill_learn_client/auth/screens/auth_screens.dart';
-import 'package:skill_learn_client/content/repository/article-repository.dart';
+// import 'package:skill_learn_client/content/repository/article-repository.dart';
 
 class RouteGenerator {
   static const String welcomePage = '/';
