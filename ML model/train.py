@@ -2,6 +2,7 @@ import pandas as pd
 from sklearn.metrics import mean_absolute_error
 from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeRegressor
+import joblib
 
 
 def trainMachine():
@@ -17,6 +18,7 @@ def trainMachine():
     X = home_data[features]
 
     # Split into validation and training data
+    # This prevents overfitting and makes the model's predictions accurate
     train_X, val_X, train_y, val_y = train_test_split(X, y, random_state=1)
 
     # Specify Model
@@ -37,3 +39,10 @@ def trainMachine():
     val_mae = mean_absolute_error(val_predictions, val_y)
     print(
         "Validation MAE for best value of max_leaf_nodes: {:,.0f}".format(val_mae))
+
+    # After the model is fitted save it into a file
+    joblib.dump(iowa_model, "./models/model.pki")
+
+
+if __name__ == "__main__":
+    trainMachine()
